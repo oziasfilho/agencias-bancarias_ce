@@ -135,9 +135,9 @@ View(bancos %>% count(UF) %>% arrange(desc(n)))
 
 
 
-Mapa_Carol<-Meso_Comp %>% 
+Mapa<-Meso_Comp %>% 
   ggplot() +
   geom_sf(aes(fill = Taxa_Banco_100mil)) + 
   scale_fill_continuous(name = "Nº Agências por 100 mil hab.", low = 'white', high = 'darkblue',
                         na.value = 'white', breaks = seq(0,7,1))
-Mapa_Carol
+Mapa
